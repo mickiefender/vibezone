@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart - VibeZone</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+   
+
+    <!-- Header -->
+    <header class="main-header">
+        <div class="container">
+            <div class="logo">
+                <h1><a href="index.html">VibeZone</a></h1>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="shop.html?category=cars">Cars</a></li>
+                    <li><a href="shop.html?category=houses">Houses</a></li>
+                    <li><a href="shop.html?category=phones">Phones</a></li>
+                    <li><a href="shop.html?category=watches">Watches</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-icons">
+                <a href="#"><i class="fas fa-search"></i></a>
+                <a href="wishlist.html"><i class="far fa-heart"></i></a>
+                <a href="cart.html" class="icon-badge">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span id="header-cart-count">0</span>
+                </a>
+                <a href="account.html"><i class="far fa-user"></i></a>
+            </div>
+            <div class="mobile-menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Shopping Cart</h1>
+            <div class="breadcrumb">
+                <a href="index.html">Home</a>
+                <span class="separator">/</span>
+                <span class="current">Cart</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cart Section -->
+    <section class="cart-section">
+        <div class="container">
+            <div class="cart-empty" id="cart-empty">
+                <div class="empty-cart-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                </div>
+                <h2>Your Cart is Empty</h2>
+                <p>Looks like you haven't added any products to your cart yet.</p>
+                <a href="shop.html" class="btn btn-primary">Continue Shopping</a>
+            </div>
+
+            <div class="cart-content" id="cart-content">
+                <div class="cart-table-wrapper">
+                    <table class="cart-table">
+                        <thead>
+                            <tr>
+                                <th>Product</th>
+                                <th>Price</th>
+                                <th>Quantity</th>
+                                <th>Subtotal</th>
+                                <th>Remove</th>
+                            </tr>
+                        </thead>
+                        <tbody id="cart-items">
+                            <!-- Cart items will be loaded dynamically -->
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="cart-actions">
+                    <div class="coupon">
+                        <input type="text" placeholder="Coupon Code">
+                        <button class="btn btn-outline">Apply Coupon</button>
+                    </div>
+                    <div class="update-cart">
+                        <button id="clear-cart" class="btn btn-outline">Clear Cart</button>
+                        <button id="update-cart" class="btn btn-primary">Update Cart</button>
+                    </div>
+                </div>
+
+                <div class="cart-summary-wrapper">
+                    <div class="cart-summary">
+                        <h3>Cart Totals</h3>
+                        <div class="summary-row">
+                            <span>Subtotal</span>
+                            <span id="cart-subtotal">₵0.00</span>
+                        </div>
+                        <div class="summary-row">
+                            <span>Tax</span>
+                            <span id="cart-tax">₵0.00</span>
+                        </div>
+                        <div class="summary-row">
+                            <span>Shipping</span>
+                            <div class="shipping-options">
+                                <label>
+                                    <input type="radio" name="shipping" value="free" checked>
+                                    Free Shipping
+                                </label>
+                                <label>
+                                    <input type="radio" name="shipping" value="flat">
+                                    Flat Rate: ₵10.00
+                                </label>
+                                <label>
+                                    <input type="radio" name="shipping" value="express">
+                                    Express Shipping: ₵20.00
+                                </label>
+                            </div>
+                        </div>
+                        <div class="summary-row total">
+                            <span>Total</span>
+                            <span id="cart-total">₵0.00</span>
+                        </div>
+                        <a href="checkout.html" class="btn btn-primary btn-block">Proceed to Checkout</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- You might also like section -->
+            <div class="suggested-products-section">
+                <h2>You Might Also Like</h2>
+                <div class="products-grid" id="suggested-products">
+                    <!-- Suggested products will be loaded dynamically -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-widgets">
+                <div class="footer-widget">
+                    <h3 class="footer-title">About VibeZone</h3>
+                    <p>VibeZone is your premium destination for luxury cars, exclusive properties, cutting-edge phones, and elegant watches. We provide a curated selection of high-quality products for the discerning customer.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="footer-widget">
+                    <h3 class="footer-title">Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="terms.html">Terms & Conditions</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="faq.html">FAQs</a></li>
+                    </ul>
+                </div>
+                <div class="footer-widget">
+                    <h3 class="footer-title">Categories</h3>
+                    <ul class="footer-links">
+                        <li><a href="shop.html?category=cars">Cars</a></li>
+                        <li><a href="shop.html?category=houses">Houses</a></li>
+                        <li><a href="shop.html?category=phones">Phones</a></li>
+                        <li><a href="shop.html?category=watches">Watches</a></li>
+                        <li><a href="shop.html">All Products</a></li>
+                    </ul>
+                </div>
+                <div class="footer-widget">
+                    <h3 class="footer-title">Contact Info</h3>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Main Street, Accra, Ghana</li>
+                        <li><i class="fas fa-phone"></i><a href="tel:233554639777">+233 554639777</a></li>
+                        <li><i class="fas fa-envelope"></i><a href="mailto:zonevibe96@gmail.com">zonevibe96@gmail.com</a> </li>
+                        <li><i class="fas fa-clock"></i> Monday-Friday: 9am to 5pm</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 VibeZone. All Rights Reserved.</p>
+                <div class="payment-methods">
+                    <i class="fab fa-cc-visa"></i>
+                    <i class="fab fa-cc-mastercard"></i>
+                    <i class="fab fa-cc-amex"></i>
+                    <i class="fab fa-cc-paypal"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/products.js"></script>
+    <script src="js/cart.js"></script>
+</body>
+</html>

@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - VibeZone</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/cart-checkout.css">
+</head>
+<body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="top-bar-left">
+                <a href="tel:+233123456789"><i class="fas fa-phone"></i> +233 123 456 789</a>
+                <a href="mailto:info@vibezone.com"><i class="fas fa-envelope"></i> info@vibezone.com</a>
+            </div>
+            <div class="top-bar-right">
+                <div class="language-selector">
+                    English <i class="fas fa-chevron-down"></i>
+                </div>
+                <a href="login.html">Login</a>
+                <a href="register.html">Register</a>
+                <div class="cart-info">
+                    <a href="cart.html">
+                        <i class="fas fa-shopping-cart"></i> Cart (<span id="cart-count">0</span>)
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="main-header">
+        <div class="container">
+            <div class="logo">
+                <h1><a href="index.html">VibeZone</a></h1>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="shop.html?category=cars">Cars</a></li>
+                    <li><a href="shop.html?category=houses">Houses</a></li>
+                    <li><a href="shop.html?category=phones">Phones</a></li>
+                    <li><a href="shop.html?category=watches">Watches</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-icons">
+                <a href="#"><i class="fas fa-search"></i></a>
+                <a href="wishlist.html"><i class="far fa-heart"></i></a>
+                <a href="cart.html" class="icon-badge">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span id="header-cart-count">0</span>
+                </a>
+                <a href="account.html"><i class="far fa-user"></i></a>
+            </div>
+            <div class="mobile-menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Checkout</h1>
+            <div class="breadcrumb">
+                <a href="index.html">Home</a>
+                <span class="separator">/</span>
+                <a href="cart.html">Cart</a>
+                <span class="separator">/</span>
+                <span class="current">Checkout</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Checkout Section -->
+    <section class="checkout-section">
+        <div class="container">
+            <div class="checkout-content">
+                <div class="checkout-form-wrapper">
+                    <h2>Billing Details</h2>
+                    <form id="checkout-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="first-name">First Name *</label>
+                                <input type="text" id="first-name" class="form-control" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="last-name">Last Name *</label>
+                                <input type="text" id="last-name" class="form-control" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="company">Company Name (Optional)</label>
+                            <input type="text" id="company" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="country">Country / Region *</label>
+                            <select id="country" class="form-control" required>
+                                <option value="">Select a country</option>
+                                <option value="GH">Ghana</option>
+                                <option value="NG">Nigeria</option>
+                                <option value="KE">Kenya</option>
+                                <option value="ZA">South Africa</option>
+                                <!-- Add more countries as needed -->
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="address">Street Address *</label>
+                            <input type="text" id="address" class="form-control" placeholder="House number and street name" required>
+                            <input type="text" id="address-2" class="form-control mt-2" placeholder="Apartment, suite, unit, etc. (optional)">
+                        </div>
+                        <div class="form-group">
+                            <label for="city">Town / City *</label>
+                            <input type="text" id="city" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="state">State / Province *</label>
+                            <input type="text" id="state" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="postcode">Postcode / ZIP *</label>
+                            <input type="text" id="postcode" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone *</label>
+                            <input type="tel" id="phone" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="notes">Order Notes (Optional)</label>
+                            <textarea id="notes" class="form-control" placeholder="Notes about your order, e.g. special notes for delivery"></textarea>
+                        </div>
+                    </form>
+                </div>
+                
+                <div class="order-summary">
+                    <h2>Your Order</h2>
+                    <div class="order-summary-content">
+                        <div class="order-summary-header">
+                            <span>Product</span>
+                            <span>Subtotal</span>
+                        </div>
+                        <div id="order-items">
+                            <!-- Order items will be loaded dynamically -->
+                        </div>
+                        <div class="order-summary-row subtotal">
+                            <span>Subtotal</span>
+                            <span id="order-subtotal">₵0.00</span>
+                        </div>
+                        <div class="order-summary-row shipping">
+                            <span>Shipping</span>
+                            <span id="order-shipping">₵0.00</span>
+                        </div>
+                        <div class="order-summary-row total">
+                            <span>Total</span>
+                            <span id="order-total">₵0.00</span>
+                        </div>
+                        
+                        <div class="payment-methods">
+                            <h3>Payment Method</h3>
+                            <div class="payment-method">
+                                <input type="radio" id="payment-paystack" name="payment-method" value="paystack" checked>
+                                <label for="payment-paystack">Paystack (Credit/Debit Card, Mobile Money)</label>
+                                <div class="payment-method-description">
+                                    <p>Pay securely using Paystack. Your payment information is never stored on our servers.</p>
+                                    <div class="payment-icons">
+                                        <i class="fab fa-cc-visa"></i>
+                                        <i class="fab fa-cc-mastercard"></i>
+                                        <i class="fab fa-cc-amex"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="terms-checkbox">
+                            <input type="checkbox" id="terms" required>
+                            <label for="terms">I have read and agree to the website <a href="terms.html">terms and conditions</a> *</label>
+                        </div>
+                        
+                        <button type="button" id="place-order" class="btn btn-primary btn-block">Place Order</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-widgets">
+                <div class="footer-widget">
+                    <h3 class="footer-title">About VibeZone</h3>
+                    <p>VibeZone is your premium destination for luxury cars, exclusive properties, cutting-edge phones, and elegant watches. We provide a curated selection of high-quality products for the discerning customer.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="footer-widget">
+                    <h3 class="footer-title">Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="terms.html">Terms & Conditions</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="faq.html">FAQs</a></li>
+                    </ul>
+                </div>
+                <div class="footer-widget">
+                    <h3 class="footer-title">Categories</h3>
+                    <ul class="footer-links">
+                        <li><a href="shop.html?category=cars">Cars</a></li>
+                        <li><a href="shop.html?category=houses">Houses</a></li>
+                        <li><a href="shop.html?category=phones">Phones</a></li>
+                        <li><a href="shop.html?category=watches">Watches</a></li>
+                        <li><a href="shop.html">All Products</a></li>
+                    </ul>
+                </div>
+                <div class="footer-widget">
+                    <h3 class="footer-title">Contact Info</h3>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Main Street, Accra, Ghana</li>
+                       <li><i class="fas fa-phone"></i><a href="tel:233554639777">+233 554639777</a></li>
+                        <li><i class="fas fa-envelope"></i><a href="mailto:zonevibe96@gmail.com">zonevibe96@gmail.com</a> </li>
+                        <li><i class="fas fa-clock"></i> Monday-Friday: 9am to 5pm</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 VibeZone. All Rights Reserved.</p>
+                <div class="payment-methods">
+                    <i class="fab fa-cc-visa"></i>
+                    <i class="fab fa-cc-mastercard"></i>
+                    <i class="fab fa-cc-amex"></i>
+                    <i class="fab fa-cc-paypal"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/products.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="js/checkout.js"></script>
+</body>
+</html>

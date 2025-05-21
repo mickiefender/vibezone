@@ -1,0 +1,91 @@
+/*arrange the product detail page very well. expecially the main image and thye buy now and add to cart button */
+
+.product-detail-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+  align-items: flex-start;
+  margin: 40px auto;
+  max-width: 1200px;
+}
+
+.product-main-image {
+  flex: 1 1 400px;
+  max-width: 500px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  background: #fff;
+  padding: 16px;
+}
+
+.product-info {
+  flex: 1 1 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.product-buttons {
+  display: flex;
+  gap: 16px;
+  margin-top: 24px;
+}
+
+.product-buttons button,
+.product-buttons .buy-now,
+.product-buttons .add-to-cart {
+  padding: 12px 28px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.product-buttons .buy-now {
+  background: #007bff;
+  color: #fff;
+}
+
+.product-buttons .add-to-cart {
+  background: #28a745;
+  color: #fff;
+}
+
+.product-buttons .buy-now:hover {
+  background: #0056b3;
+}
+
+.product-buttons .add-to-cart:hover {
+  background: #1e7e34;
+}
+
+.product-description {
+  margin-top: 24px;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+.product-description h2 {
+  font-size: 1.5rem;
+  margin-bottom: 16px;
+}
+.product-description p {
+  margin-bottom: 16px;
+}
+.product-description ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+.product-description ul li {
+  margin-bottom: 8px;
+}
+.product-description ul li::marker {
+  color: #007bff;
+}
+.product-description ol {
+  list-style-type: decimal;
+  padding-left: 20px;
+}   
+.product-description ol li {
+  margin-bottom: 8px;
+}

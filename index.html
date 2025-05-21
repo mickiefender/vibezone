@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VibeZone - Premium Shopping Experience</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  
+    <!-- Header -->
+    <header class="main-header">
+        <div class="container">
+            <div class="logo">
+                <h1><a href="index.html">VibeZone</a></h1>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="shop.html?category=cars">Cars</a></li>
+                    <li><a href="shop.html?category=houses">Houses</a></li>
+                    <li><a href="shop.html?category=phones">Phones</a></li>
+                    <li><a href="shop.html?category=watches">Watches</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-icons">
+                <a href="#"><i class="fas fa-search"></i></a>
+                <a href="wishlist.html"><i class="far fa-heart"></i></a>
+                <a href="cart.html" class="icon-badge">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span id="header-cart-count">0</span>
+                </a>
+                
+            </div>
+            <div class="mobile-menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+   <!-- Modern Hero Section -->
+<section class="hero-section">
+    <div class="hero-slider">
+        <!-- Slide 1 -->
+        <div class="hero-slide active" data-index="0">
+            <div class="hero-image-container">
+                <img src="main-images/watches/rolex watch.jpg" alt="Luxury Collection" class="hero-image">
+                <div class="hero-overlay"></div>
+                <div class="hero-content">
+                    <h3 class="slide-in-top">SEASON SALE</h3>
+                    <h1 class="slide-in-right">LUXURY COLLECTION</h1>
+                    <p class="slide-in-bottom">Experience the finest selection of premium products with exclusive discounts up to 70% off.</p>
+                    <div class="hero-buttons fade-in">
+                        <a href="shop.html" class="btn btn-primary">SHOP NOW</a>
+                        <a href="shop.html" class="btn btn-outline">EXPLORE</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Slide 2 -->
+        <div class="hero-slide" data-index="1">
+            <div class="hero-image-container">
+                <img src="main-images/phones/iphone 16 pro.jpg" alt="Premium Watches" class="hero-image">
+                <div class="hero-overlay"></div>
+                <div class="hero-content">
+                    <h3 class="slide-in-top">NEW ARRIVAL</h3>
+                    <h1 class="slide-in-right">PREMIUM WATCHES</h1>
+                    <p class="slide-in-bottom">Discover our collection of luxury timepieces crafted with precision and elegance.</p>
+                    <div class="hero-buttons fade-in">
+                        <a href="shop.html?category=watches" class="btn btn-primary">SHOP WATCHES</a>
+                        <a href="shop.html" class="btn btn-outline">VIEW ALL</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Slide 3 -->
+        <div class="hero-slide" data-index="2">
+            <div class="hero-image-container">
+                <img src="main-images/houses/wooden-house1.jpg" alt="Exclusive Properties" class="hero-image">
+                <div class="hero-overlay"></div>
+                <div class="hero-content">
+                    <h3 class="slide-in-top">FEATURED</h3>
+                    <h1 class="slide-in-right">EXCLUSIVE PROPERTIES</h1>
+                    <p class="slide-in-bottom">Find your dream home among our selection of premium properties in prime locations.</p>
+                    <div class="hero-buttons fade-in">
+                        <a href="shop.html?category=houses" class="btn btn-primary">VIEW PROPERTIES</a>
+                        <a href="contact.html" class="btn btn-outline">CONTACT AGENT</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Slide 4 -->
+        <div class="hero-slide" data-index="3">
+            <div class="hero-image-container">
+                <img src="main-images/cars/Mecedes benz GLE 2021.jpg" alt="Luxury Cars" class="hero-image">
+                <div class="hero-overlay"></div>
+                <div class="hero-content">
+                    <h3 class="slide-in-top">PREMIUM</h3>
+                    <h1 class="slide-in-right">LUXURY CARS</h1>
+                    <p class="slide-in-bottom">Experience the thrill of driving with our collection of high-performance luxury vehicles.</p>
+                    <div class="hero-buttons fade-in">
+                        <a href="shop.html?category=cars" class="btn btn-primary">EXPLORE CARS</a>
+                        <a href="shop.html" class="btn btn-outline">LEARN MORE</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Navigation Arrows -->
+    <div class="hero-nav">
+        <button class="hero-nav-btn prev" aria-label="Previous slide">
+            <i class="fas fa-chevron-left"></i>
+        </button>
+        <button class="hero-nav-btn next" aria-label="Next slide">
+            <i class="fas fa-chevron-right"></i>
+        </button>
+    </div>
+    
+    <!-- Dots Navigation -->
+    <div class="hero-dots">
+        <button class="dot active" data-index="0" aria-label="Slide 1"></button>
+        <button class="dot" data-index="1" aria-label="Slide 2"></button>
+        <button class="dot" data-index="2" aria-label="Slide 3"></button>
+        <button class="dot" data-index="3" aria-label="Slide 4"></button>
+    </div>
+</section>
+
+    <!-- Features Section -->
+    <section class="features-section">
+        <div class="container">
+            <div class="features-container">
+                <div class="feature-box">
+                    <div class="feature-icon">
+                        <i class="fas fa-truck"></i>
+                    </div>
+                    <div class="feature-content">
+                        <h3>Free Shipping</h3>
+                        <p>On All Orders Over ₵500</p>
+                    </div>
+                </div>
+                <div class="feature-box">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <div class="feature-content">
+                        <h3>Secure Payment</h3>
+                        <p>We ensure secure payment</p>
+                    </div>
+                </div>
+                <div class="feature-box">
+                    <div class="feature-icon">
+                        <i class="fas fa-undo"></i>
+                    </div>
+                    <div class="feature-content">
+                        <h3>100% Money Back</h3>
+                        <p>30 Days Return Policy</p>
+                    </div>
+                </div>
+                <div class="feature-box">
+                    <div class="feature-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <div class="feature-content">
+                        <h3>Online Support</h3>
+                        <p>24/7 Dedicated Support</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Category Banners -->
+    <section class="category-banners">
+        <div class="container">
+            <div class="banners-grid">
+                <div class="category-banner banner-large">
+                    <img src="main-images/phones/iphones-mockup.jpg" alt="Mobile Phones">
+                    <div class="banner-content">
+                        <h3>New Arrivals</h3>
+                        <h2>Mobile Phones</h2>
+                        <p>Up to 70% Off</p>
+                        <a href="shop.html?category=phones" class="btn btn-light">Shop Now</a>
+                    </div>
+                </div>
+                <div class="category-banner">
+                    <img src="main-images/cars/Elantra-red.jpg" alt="Cars">
+                    <div class="banner-content">
+                        <h3>35% OFF</h3>
+                        <h2>Handbag</h2>
+                        <a href="shop.html?category=cars" class="btn btn-light">Shop Now</a>
+                    </div>
+                </div>
+                <div class="category-banner">
+                    <img src="main-images/watches/Samsung Galaxy Watch Ultra - Titanium Silver | Simply Be .jpg" alt="Watch">
+                    <div class="banner-content">
+                        <h3>25% OFF</h3>
+                        <h2>Watch</h2>
+                        <a href="shop.html?category=watches" class="btn btn-light">Shop Now</a>
+                    </div>
+                </div>
+                <div class="category-banner">
+                    <img src="main-images/houses/wooden-house1.jpg" alt="Backpack">
+                    <div class="banner-content">
+                        <h3>Houses</h3>
+                        <h2>Best Prices</h2>
+                        <p>Min. 40-50% Off</p>
+                        <a href="shop.html?category=houses" class="btn btn-light">Shop Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section class="featured-products">
+        <div class="container">
+            <div class="section-header">
+                <h2>Featured Products</h2>
+            </div>
+            <div class="product-tabs">
+                <button class="tab-btn active" data-tab="featured">Featured</button>
+                <button class="tab-btn" data-tab="new-arrival">New Arrival</button>
+                <button class="tab-btn" data-tab="best-selling">Best Selling</button>
+                <button class="tab-btn" data-tab="top-rated">Top Rated</button>
+            </div>
+            <div class="products-grid" id="products-container">
+                <!-- Products will be loaded dynamically -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Weekend Sale Banner -->
+    <section class="weekend-sale">
+        <div class="container">
+            <div class="banners-grid">
+                <div class="category-banner">
+                    <img src="main-images/watches/Apple Watch Ultra.jpg" alt="Men's Fashion">
+                    <div class="banner-content">
+                        <h3>Weekend Sale</h3>
+                        <h2>Watches</h2>
+                        <p>Flat 70% Off</p>
+                        <a href="shop.html?category=watches" class="btn btn-light">Shop Now</a>
+                    </div>
+                </div>
+                <div class="category-banner">
+                    <img src="main-images/phones/iphone 16-pink.jpg" alt="Women's Wear">
+                    <div class="banner-content">
+                        <h3>Fast Deal</h3>
+                        <h2>Phones</h2>
+                        <p>Min. 35-70% Off</p>
+                        <a href="shop.html?category=phones" class="btn btn-light">Shop Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Categories -->
+    <section class="featured-categories">
+        <div class="container">
+            <div class="section-header">
+                <h2>Featured Categories</h2>
+            </div>
+            <div class="category-cards">
+                <a href="shop.html?category=cars" class="category-card">
+                    <img src="main-images/cars/toyotacorolla-blue.jpg" alt="Cars">
+                    <div class="category-info">
+                        <h3>Cars</h3>
+                        <p>4 Products</p>
+                    </div>
+                </a>
+                <a href="shop.html?category=houses" class="category-card">
+                    <img src="main-images/houses/classicBrichRanch.jpg" alt="Houses">
+                    <div class="category-info">
+                        <h3>Houses</h3>
+                        <p>4 Products</p>
+                    </div>
+                </a>
+                <a href="shop.html?category=phones" class="category-card">
+                    <img src="main-images/phones/iphones-mockup.jpg" alt="Phones">
+                    <div class="category-info">
+                        <h3>Phones</h3>
+                        <p>4 Products</p>
+                    </div>
+                </a>
+                <a href="shop.html?category=watches" class="category-card">
+                    <img src="main-images/watches/series 7-back.jpg" alt="Watches">
+                    <div class="category-info">
+                        <h3>Watches</h3>
+                        <p>4 Products</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter">
+        <div class="container">
+            <div class="newsletter-content">
+                <h2>Subscribe to Our Newsletter</h2>
+                <p>Get the latest updates on new products and upcoming sales</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Your Email Address" required>
+                    <button type="submit" class="btn btn-primary">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-widgets">
+                <div class="footer-widget">
+                    <h3 class="footer-title">About VibeZone</h3>
+                    <p>VibeZone is your premium destination for luxury cars, exclusive properties, cutting-edge phones, and elegant watches. We provide a curated selection of high-quality products for the discerning customer.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="footer-widget">
+                    <h3 class="footer-title">Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="terms.html">Terms & Conditions</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="faq.html">FAQs</a></li>
+                    </ul>
+                </div>
+                <div class="footer-widget">
+                    <h3 class="footer-title">Categories</h3>
+                    <ul class="footer-links">
+                        <li><a href="shop.html?category=cars">Cars</a></li>
+                        <li><a href="shop.html?category=houses">Houses</a></li>
+                        <li><a href="shop.html?category=phones">Phones</a></li>
+                        <li><a href="shop.html?category=watches">Watches</a></li>
+                        <li><a href="shop.html">All Products</a></li>
+                    </ul>
+                </div>
+                <div class="footer-widget">
+                    <h3 class="footer-title">Contact Info</h3>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Main Street, Accra, Ghana</li>
+                        <li><i class="fas fa-phone"></i><a href="tel:233554639777">+233 554639777</a></li>
+                        <li><i class="fas fa-envelope"></i><a href="mailto:zonevibe96@gmail.com">zonevibe96@gmail.com</a> </li>
+                        <li><i class="fas fa-clock"></i> Monday-Friday: 9am to 5pm</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 VibeZone. All Rights Reserved.</p>
+                <div class="payment-methods">
+                    <i class="fab fa-cc-visa"></i>
+                    <i class="fab fa-cc-mastercard"></i>
+                    <i class="fab fa-cc-amex"></i>
+                    <i class="fab fa-cc-paypal"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/products.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="js/shop.js"></script>
+    <script src="js/product-detail.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
