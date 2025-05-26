@@ -25,11 +25,11 @@ const products = [
     tags: ["pickup", "luxury", "performance"],
     colors: ["silver"],
     images: [
-      "main-images/CARS/GMC pickup.JPG",
-      "main-images/CARS/GMC pickup2.JPG",
-      "main-images/CARS/GMC 5.JPG",
-      "main-images/CARS/GMC4.jpg",
-      "main-images/CARS/GMC 3.jpg"
+      "CARS/GMC pickup.JPG",
+      "CARS/GMC pickup2.JPG",
+      "CARS/GMC 5.JPG",
+      "CARS/GMC4.jpg",
+      "CARS/GMC 3.jpg"
      
     ],
     shortDescription: "The GMC Pickup is a powerful and luxurious truck designed for both work and play.",
@@ -79,7 +79,7 @@ const products = [
     isFeatured: true,
     tags: ["luxury", "suv", "performance"],
     colors: [ "white"],
-    images: ["main-images/CARS/Mecedes G63-2JPG.JPG", "main-images/CARS/G63-2.jpg"],
+    images: ["CARS/Mecedes G63-2JPG.JPG", "CARS/G63-2.jpg"],
     shortDescription: "The Mercedes G63 2022 is a luxury SUV that combines performance, style, and advanced technology.",
     description:
       "The Mercedes G63 2022 is a luxury SUV that combines performance, style, and advanced technology. With its iconic design, powerful engine options, and state-of-the-art features, it is the ultimate vehicle for those who demand the best. The G63 offers a spacious and opulent interior, advanced safety systems, and cutting-edge infotainment technology, making it perfect for both city driving and off-road adventures.",
@@ -125,11 +125,11 @@ const products = [
     tags: ["luxury", "suv", "performance"],
     colors: [ "black"],
     images: [
-      "main-images/CARS/porche cayenne-2.jpg",
-      "main-images/CARS/porche cayenne-3.jpg",
-      "main-images/CARS/porche cayenne-4.jpg",
-      "main-images/CARS/porche cayenne-5.jpg",
-      "main-images/CARS/porche cayenne-9.jpg",
+      "CARS/porche cayenne-2.jpg",
+      "CARS/porche cayenne-3.jpg",
+      "CARS/porche cayenne-4.jpg",
+      "CARS/porche cayenne-5.jpg",
+      "CARS/porche cayenne-9.jpg",
     ],
     shortDescription: "The Porsche Cayenne is a luxury SUV that combines performance, style, and advanced technology.",
     description:
@@ -174,9 +174,9 @@ const products = [
     tags: ["compact", "hatchback", "city"],
     colors: ["gray", "black", "blue", "white"],
     images: [
-      "main-images/cars/vitz-blue.jpg",
-      "main-images/cars/vitz-interior.jpg",
-      "main-images/cars/vitz-silver.jpg",
+      "cars/vitz-blue.jpg",
+      "cars/vitz-interior.jpg",
+      "cars/vitz-silver.jpg",
       
     ],
     shortDescription: "Compact hatchback with efficient performance and modern design.",
@@ -208,25 +208,25 @@ const products = [
   },
   {
     id: "car-005",
-    name: "Toyota Vitz",
+    name: "RAM",
     category: "cars",
-    brand: "Toyota",
+    brand: "RAM",
     price: 85000,
     stock: 3,
-    sku: "CAR-TOY-004",
+    sku: "CAR-RAM-005",
     rating: 4.2,
     reviewCount: 78,
     isNew: false,
     isSale: false,
     isFeatured: false,
-    tags: ["compact", "hatchback", "city"],
-    colors: ["gray", "black", "blue", "white"],
+    tags: ["pickup", "truck", "performance"],
+    colors: ["gray", "white"],
     images: [
-      "main-images/CARS/RAM1.JPG",
-      "main-images/CARS/RAM2.JPG",
-      "main-images/CARS/RAM 4.JPG",
-      "main-images/CARS/RAM5.JPG",
-      "main-images/CARS/RAM3.JPG"
+      "CARS/RAM1.JPG",
+      "CARS/RAM2.JPG",
+      "CARS/RAM 4.JPG",
+      "CARS/RAM5.JPG",
+      "CARS/RAM3.JPG"
       
     ],
     shortDescription: "The RAM 1500 is a full-size pickup truck known for its rugged performance and advanced technology.",
@@ -276,9 +276,9 @@ const products = [
     tags: ["Joyroad", "Sport", "Tyres"],
     colors: ["white", "gray"],
     images: [
-      "main-images/Tyres/GENESYS XP1.jpg",
-      "main-images/Tyres/GENESYS-.jpg",
-      "main-images/Tyres/GENESYS-185.jpg",
+      "Tyres/GENESYS XP1.jpg",
+      "Tyres/GENESYS-.jpg",
+      "Tyres/GENESYS-185.jpg",
       
     ],
     shortDescription: "High-performance all-season tyres designed for superior handling and comfort.",
@@ -324,9 +324,9 @@ const products = [
     tags: ["Joyroad", "Sport", "Tyres"],
     colors: ["white", "gray"],
     images: [
-      "main-images/Tyres/Joyroad Sport Rx6.jpg",
-      "main-images/Tyres/JOYROAD-TOUR RXI.jpg",
-      "main-images/Tyres/JOYROAD-GRAND TOURER .jpg",
+      "Tyres/Joyroad Sport Rx6.jpg",
+      "Tyres/JOYROAD-TOUR RXI.jpg",
+      "Tyres/JOYROAD-GRAND TOURER .jpg",
       
     ],
     shortDescription: "High-performance all-season tyres designed for superior handling and comfort.",
@@ -375,10 +375,10 @@ const products = [
     tags: ["Sport", "Tyres"],
     colors: ["black"],
     images: [
-      "main-images/Tyres/SPORT XV1-235.jpg",
-      "main-images/Tyres/SPORT XVI 215.jpg",
-      "main-images/Tyres/SPORT XVI-265.jpg",
-      "main-images/Tyres/SPORT XVI 255.jpg",
+      "Tyres/SPORT XV1-235.jpg",
+      "Tyres/SPORT XVI 215.jpg",
+      "Tyres/SPORT XVI-265.jpg",
+      "Tyres/SPORT XVI 255.jpg",
       
     ],
     shortDescription: "High-performance all-season tyres designed for superior handling and comfort.",
@@ -428,8 +428,8 @@ const products = [
     tags: ["vantage", "sport", "tyres"],
     colors: ["black"],
     images: [
-      "main-images/Tyres/VANTAGE XU1.jpg",
-      "main-images/Tyres/VANTAGE XUI 215.jpg",
+      "Tyres/VANTAGE XU1.jpg",
+      "Tyres/VANTAGE XUI 215.jpg",
       
       
     ],
@@ -480,9 +480,9 @@ const products = [
     tags: ["beachfront", "modern", "villa", "luxury"],
     colors: ["white", "gray"],
     images: [
-      "main-images/houses/Modern Beachfront Villa.jpg",
-      "main-images/houses/Modern Beachfront Villa-living room.jpg",
-      "main-images/houses/Modern Beachfront-bedroom.jpg",
+      "houses/Modern Beachfront Villa.jpg",
+      "houses/Modern Beachfront Villa-living room.jpg",
+      "houses/Modern Beachfront-bedroom.jpg",
       
     ],
     shortDescription: "Stunning modern beachfront villa with panoramic ocean views.",
@@ -530,9 +530,9 @@ const products = [
     tags: ["penthouse", "loft", "urban", "luxury"],
     colors: ["custom"],
     images: [
-      "main-images/houses/classicBrichRanch.jpg",
-      "main-images/houses/classicBrich-night.jpg",
-      "main-images/houses/classicBrichRanch-interior.jpg",
+      "houses/classicBrichRanch.jpg",
+      "houses/classicBrich-night.jpg",
+      "houses/classicBrichRanch-interior.jpg",
     ],
     shortDescription: "Spectacular penthouse loft with panoramic city views.",
     description:
@@ -675,9 +675,9 @@ const products = [
     tags: ["smartphone", "ios", "premium"],
     colors: ["graphite", "silver", "gold", "purple"],
     images: [
-      "main-images/phones/iphone 14.jpg",
-      "main-images/phones/iphone 16 pro.jpg",
-      "main-images/phones/iphone 14-2.jpg",
+      "phones/iphone 14.jpg",
+      "phones/iphone 16 pro.jpg",
+      "phones/iphone 14-2.jpg",
     ],
     shortDescription: "Apple's most advanced iPhone with Dynamic Island and A16 Bionic chip.",
     description:
@@ -725,9 +725,9 @@ const products = [
     tags: ["smartphone", "android", "premium"],
     colors: ["phantom black", "cream", "green", "lavender"],
     images: [
-      "main-images/phones/Samsung Galaxy S23 Ultra.jpg",
-      "main-images/phones/Samsung Galaxy S23 Ultra-2.jpg",
-      "main-images/phones/Samsung Galaxy S23 Ultra-black.jpg",
+      "phones/Samsung Galaxy S23 Ultra.jpg",
+      "phones/Samsung Galaxy S23 Ultra-2.jpg",
+      "phones/Samsung Galaxy S23 Ultra-black.jpg",
     ],
     shortDescription: "Samsung's ultimate flagship with S Pen and 200MP camera.",
     description:
@@ -774,9 +774,9 @@ const products = [
     tags: ["smartphone", "ios", "premium"],
     colors: ["purple", "black", "white", "red"],
     images: [
-      "main-images/phones/iphone 11-black.jpg",
-      "main-images/phones/iphone 11-mutli-coloured.jpg",
-      "main-images/phones/iphone 11-white.jpg",
+      "phones/iphone 11-black.jpg",
+      "phones/iphone 11-mutli-coloured.jpg",
+      "phones/iphone 11-white.jpg",
     ],
     shortDescription: "Google's flagship with advanced AI capabilities and exceptional camera.",
     description:
@@ -821,9 +821,9 @@ const products = [
     tags: ["smartphone", "ios", "premium"],
     colors: ["pink", "teal", "black", "white"],
     images: [
-      "main-images/phones/iphone 16-pink.jpg",
-      "main-images/phones/iphone 16-blue.jpg",
-      "main-images/phones/iphone 16-teal.jpg",
+      "phones/iphone 16-pink.jpg",
+      "phones/iphone 16-blue.jpg",
+      "phones/iphone 16-teal.jpg",
     ],
     shortDescription: "Flagship performance with Hasselblad camera system.",
     description:
@@ -870,11 +870,11 @@ const products = [
     tags: ["casual", "digital", "durable"],
     colors: ["black", "blue", "gray"],
     images: [
-      "main-images/watches/Casio G-shock-black &ash.jpg",
-      "main-images/watches/Casio G-shock-black-5.jpg",
-      "main-images/watches/Casio G-shock-black&3.jpg",
-      "main-images/watches/Casio G-shock-black&blue.jpg",
-      "main-images/watches/Casio G-shock-black4.jpg"
+      "watches/Casio G-shock-black &ash.jpg",
+      "watches/Casio G-shock-black-5.jpg",
+      "watches/Casio G-shock-black&3.jpg",
+      "watches/Casio G-shock-black&blue.jpg",
+      "watches/Casio G-shock-black4.jpg"
     ],
     shortDescription: "The ultimate rugged watch with advanced features.",
     description:
@@ -921,10 +921,10 @@ const products = [
     tags: ["luxury", "chronograph", "automatic"],
     colors: ["black","red","blue"],
     images: [
-      "main-images/watches/Casio G-shock-black and red.jpg",
-      "main-images/watches/Casio G-shock-black.jpg",
-      "main-images/watches/Casio G-shock-black&white.jpg",
-      "main-images/watches/Casio G-shock-black&yellow.jpg"
+      "watches/Casio G-shock-black and red.jpg",
+      "watches/Casio G-shock-black.jpg",
+      "watches/Casio G-shock-black&white.jpg",
+      "watches/Casio G-shock-black&yellow.jpg"
     ],
     shortDescription: "The first watch worn on the moon.",
     description:
@@ -969,12 +969,12 @@ const products = [
     tags: ["luxury", "automatic", "sports"],
     colors: ["blue", "green", "white","orange","red"],
     images: [
-      "main-images/watches/Casio G-shock-trans&seablue.jpg",
-      "main-images/watches/Casio G-shock-transparent-orange.jpg",
-      "main-images/watches/Casio G-shock-transparent&blue.jpg",
-      "main-images/watches/Casio G-shock-transparent&blue2.jpg",
-      "main-images/watches/Casio G-shock-transparent&cream.jpg",
-      "main-images/watches/Casio G-shock-transparent&red.jpg",
+      "watches/Casio G-shock-trans&seablue.jpg",
+      "watches/Casio G-shock-transparent-orange.jpg",
+      "watches/Casio G-shock-transparent&blue.jpg",
+      "watches/Casio G-shock-transparent&blue2.jpg",
+      "watches/Casio G-shock-transparent&cream.jpg",
+      "watches/Casio G-shock-transparent&red.jpg",
       
     ],
     shortDescription: "The G-Shock is a legendary timepiece known for its durability and advanced features.",
@@ -1020,9 +1020,9 @@ const products = [
     tags: ["smartwatch", "rugged", "outdoor"],
     colors: ["yellow", "white"],
     images: [
-      "main-images/watches/Casio G-shock-yellow&black.jpg",
-      "main-images/watches/Casio G-shock-white2.jpg",
-      "main-images/watches/Casio G-shock-white&black.jpg",
+      "watches/Casio G-shock-yellow&black.jpg",
+      "watches/Casio G-shock-white2.jpg",
+      "watches/Casio G-shock-white&black.jpg",
     ],
     shortDescription: "The Casio G-Shock is the ultimate rugged watch designed for durability and functionality.",
     description:
